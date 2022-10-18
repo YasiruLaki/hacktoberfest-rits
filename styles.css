@@ -6,17 +6,21 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(19, 0, 36);
+    overflow-y: hidden;
 }
 
 /* BG Image */
 .bg-1{
     position: absolute;
+    filter: brightness(0.9);
     background-image: url("Images/BG.jpg");
     opacity: 0.5;
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .bg-2{
@@ -27,6 +31,7 @@ body{
     width: 100%;
     height: 120%;
     z-index: -1;
+    background-size: fill;
 }
 
 /* Logos */
@@ -42,6 +47,7 @@ body{
     width: 250px;
     margin: auto;
     padding: 10px;
+    padding-top: 30px;
 }
 
 /* CLI Box */
@@ -49,7 +55,9 @@ body{
 .box{
     display: block;
     margin:auto;
-    width: 50%;
+    width: 110vh;
+    padding-top: 30px;
+    border-left: #00f2ff 5px;
 }
 
 /* title */
@@ -204,7 +212,7 @@ body{
     border-opacity-in 2s 13.8s forwards,
     blinkTextCursor 500ms steps(40) infinite normal,
     glow 1s ease-in-out infinite alternate,
-    border-opacity-out 2s 15.8s forwards;
+    border-opacity-out 2s 15.2s forwards;
 }
 
 .line7{
@@ -225,7 +233,7 @@ body{
     border-opacity-in 2s 16s forwards,
     blinkTextCursor 500ms steps(40) infinite normal,
     glow 1s ease-in-out infinite alternate,
-    border-opacity-out 2s 17s forwards;
+    border-opacity-out 2s 17.5s forwards;
 }
 
 .line8{
@@ -246,7 +254,7 @@ body{
     border-opacity-in 2s 18.1s forwards,
     blinkTextCursor 500ms steps(40) infinite normal,
     glow 1s ease-in-out infinite alternate,
-    border-opacity-out 2s 21.2s forwards;
+    border-opacity-out 2s 20.2s forwards;
 }
 
 .line9{
@@ -263,11 +271,11 @@ body{
 }
 
 .typewriter-title9{
-    animation: typewriter9 2s steps(40) 0s 1 normal both,
-    border-opacity-in 2s 18.1s forwards,
+    animation: typewriter9 2s steps(40) 21.3s 1 normal both,
+    border-opacity-in 2s 21.3s forwards,
     blinkTextCursor 500ms steps(40) infinite normal,
     glow 1s ease-in-out infinite alternate,
-    border-opacity-out 2s 21.2s forwards;
+    border-opacity-out 2s 22.3s forwards;
 }
 
 .line10{
@@ -284,15 +292,106 @@ body{
 }
 
 .typewriter-title10{
-    animation: typewriter10 2s steps(40) 0s 1 normal both,
-    border-opacity-in 2s 18.1s forwards,
+    animation: typewriter10 2s steps(40) 23.4s 1 normal both,
+    border-opacity-in 2s 23.4s forwards,
     blinkTextCursor 500ms steps(40) infinite normal,
     glow 1s ease-in-out infinite alternate,
-    border-opacity-out 2s 21.2s forwards;
+    border-opacity-out 2s 25.4s forwards;
+}
+
+.line11{
+    margin-top: 10px;
+    font-family:'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: white;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title11{
+    animation: typewriter11 2s steps(40) 26.4s 1 normal both,
+    border-opacity-in 2s 26.4s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    glow 1s ease-in-out infinite alternate,
+    border-opacity-out 2s 28.4s forwards;
+}
+
+.line12{
+    margin-top: 10px;
+    font-family:'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: white;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+.typewriter-title12{
+    animation: typewriter12 2s steps(40) 32.5s 1 normal both,
+    border-opacity-in 2s 32.5s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    glow 1s ease-in-out infinite alternate,
+    border-opacity-out 2s 34s forwards;
+}
+
+.line13{
+    margin-top: 10px;
+    font-family:'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    background-image:-webkit-linear-gradient(52deg, #f4de7d,#7fe3e8, #8d97fe);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
 }
 
 
+/* Responsive */
 
+@media screen and (max-width: 920px) {
+    .box{
+        font-size: 90%;
+        width: 90vh;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hack-logo{
+        width: 200px;
+    }
+    .box{
+        width: 80vh;
+        font-size: 80%
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hack-logo{
+        width: 200px;
+    }
+    .box{
+        width: 70vh;
+        font-size: 70%
+    }
+}
+    
+
+
+
+
+
+/* Keyframes */
 
 @keyframes typewriter {
     from {
@@ -362,7 +461,25 @@ body{
           width: 0;
     }
     to {
-          width: 100%;
+          width: 90%;
+    }
+}
+
+@keyframes typewriter11 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 30em;
+    }
+}
+
+@keyframes typewriter12 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 18em;
     }
 }
 
@@ -420,3 +537,4 @@ body{
         border-right: none;
     }
 }
+

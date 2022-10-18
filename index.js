@@ -105,3 +105,45 @@ const el4 = document.getElementById("line-dash2")
 setTimeout(() => {
         el4.style.display = 'block';
       }, 20800);
+
+const el5 = document.getElementById("line11")
+
+    setTimeout(() => {
+        el5.innerHTML = '&gt&gt Your Digital Invitation Will download within 3s'
+    }, 28400);
+
+    setTimeout(() => {
+        el5.innerHTML = '&gt&gt Your Digital Invitation Will download within 2s'
+    }, 29400);
+
+    setTimeout(() => {
+        el5.innerHTML = '&gt&gt Your Digital Invitation Will download within 1s'
+    }, 30400);
+
+    setTimeout(() => {
+        el5.innerHTML = '&gt&gt Your Digital Invitation Will download within 0s'
+    }, 31400);
+
+    setTimeout(() => {
+        el5.innerHTML = '&gt&gt [Invitation Downloaded Successfully]'
+    }, 32100);
+
+function downloadInvitation(){
+    const anchor = document.createElement('a');
+    anchor.href = 'Images/Hacktober LOGO.png';
+    anchor.download = 'Hacktoberfest Invitation';
+
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+}
+
+const btn = document.getElementById("btn")
+setTimeout(() => {
+    btn.onclick = downloadInvitation()
+}, 31500);
+
+const el6 = document.getElementById("line13")
+setTimeout(() => {
+    el6.style.display = 'block'
+}, 35000);
