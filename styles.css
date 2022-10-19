@@ -400,7 +400,21 @@ body{
 @media screen and (max-width: 920px) {
     .box{
         font-size: 90%;
-        width: 90vh;
+        width: 80%;
+    }
+    .typewriter-title10{
+        animation: typewriter13 2s steps(40) 23.4s 1 normal both,
+        border-opacity-in 2s 23.4s forwards,
+        blinkTextCursor 500ms steps(40) infinite normal,
+        glow 1s ease-in-out infinite alternate,
+        border-opacity-out 2s 25.4s forwards;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .box{
+        font-size: 90%;
+        width: 90%;
     }
     .typewriter-title10{
         animation: typewriter13 2s steps(40) 23.4s 1 normal both,
@@ -416,7 +430,7 @@ body{
         width: 200px;
     }
     .box{
-        width: 80vh;
+        width: 90%;
         font-size: 80%
     }
 }
@@ -426,7 +440,7 @@ body{
         width: 200px;
     }
     .box{
-        width: 70vh;
+        width: 90%;
         font-size: 70%
     }
 }
@@ -436,7 +450,7 @@ body{
         width: 150px;
     }
     .box{
-        width: 60vh;
+        width: 90%;
         font-size: 60%;
         margin-top: 5px;
     }
@@ -447,7 +461,7 @@ body{
         width: 140px;
     }
     .box{
-        width: 50vh;
+        width: 90%;
         font-size: 50%
     }
 }
@@ -457,13 +471,16 @@ body{
         width: 130px;
     }
     .box{
-        width: 50vh;
+        width: 95%;
         font-size: 50%
     }
 
-    .box{
-        margin-left: 5px;
-        margin-right: 5px;
+    .typewriter-title10{
+        animation: typewriter15 2s steps(40) 23.4s 1 normal both,
+        border-opacity-in 2s 23.4s forwards,
+        blinkTextCursor 500ms steps(40) infinite normal,
+        glow 1s ease-in-out infinite alternate,
+        border-opacity-out 2s 25.4s forwards;
     }
 }
     
@@ -579,6 +596,15 @@ body{
     }
     to {
           width: 20em;
+    }
+}
+
+@keyframes typewriter15 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 65%;
     }
 }
 
