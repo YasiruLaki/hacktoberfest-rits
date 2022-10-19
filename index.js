@@ -147,3 +147,29 @@ const el6 = document.getElementById("line13")
 setTimeout(() => {
     el6.style.display = 'block'
 }, 35000);
+
+function myFunction2(x) {
+    if (x.matches) { // If media query matches
+        document.getElementById('line9').innerHTML='&gt&gt It is with honor that we invite you to "Hacktoberfest 22",'
+    } else {
+        document.getElementById('line9').innerHTML='&gt&gt It is with honor that we invite you to "Hacktoberfest 22", Organized by'
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 400px)")
+  myFunction2(x) // Call listener function at run time
+  x.addListener(myFunction2) // Attach listener function on state changes
+
+
+
+  function myFunction(y) {
+      if (y.matches) { // If media query matches
+        document.getElementById('line10').innerHTML='&nbsp&nbsp Organized by the Richmond College It Society.'
+      } else {
+        document.getElementById('line10').innerHTML='&nbsp&nbsp the Richmond College It Society in parallel to the global event.'
+      }
+    }
+    
+    var y = window.matchMedia("(max-width: 400px)")
+    myFunction(y) // Call listener function at run time
+    y.addListener(myFunction) // Attach listener function on state changes
