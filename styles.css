@@ -37,6 +37,7 @@ body{
 /* Logos */
 
 .school-logos{
+    position: relative;
     display: block;
     width: 140px;
     margin: auto;
@@ -356,6 +357,37 @@ body{
 
 }
 
+.typewriter-title14{
+    animation: typewriter14 2s steps(40) 21.3s 1 normal both,
+    border-opacity-in 2s 21.3s forwards,
+    blinkTextCursor 500ms steps(40) infinite normal,
+    glow 1s ease-in-out infinite alternate,
+    border-opacity-out 2s 22.3s forwards;
+}
+
+.line14{
+    margin-top: 10px;
+    font-family:'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    color: white;
+    border-right: none;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+
+.footer-text{
+    color: white;
+    margin-top: -6px;
+    text-align: center;
+    font-family:'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+    font-size: 80%;
+}
 
 /* Responsive */
 
@@ -363,6 +395,13 @@ body{
     .box{
         font-size: 90%;
         width: 90vh;
+    }
+    .typewriter-title10{
+        animation: typewriter13 2s steps(40) 23.4s 1 normal both,
+        border-opacity-in 2s 23.4s forwards,
+        blinkTextCursor 500ms steps(40) infinite normal,
+        glow 1s ease-in-out infinite alternate,
+        border-opacity-out 2s 25.4s forwards;
     }
 }
 
@@ -383,6 +422,42 @@ body{
     .box{
         width: 70vh;
         font-size: 70%
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .hack-logo{
+        width: 150px;
+    }
+    .box{
+        width: 60vh;
+        font-size: 60%;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .hack-logo{
+        width: 140px;
+    }
+    .box{
+        width: 50vh;
+        font-size: 50%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hack-logo{
+        width: 130px;
+    }
+    .box{
+        width: 50vh;
+        font-size: 50%
+    }
+
+    .box{
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
     
@@ -480,6 +555,24 @@ body{
     }
     to {
           width: 18em;
+    }
+}
+
+@keyframes typewriter13 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 89%;
+    }
+}
+
+@keyframes typewriter14 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 20em;
     }
 }
 
