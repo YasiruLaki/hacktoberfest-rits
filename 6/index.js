@@ -130,7 +130,7 @@ const el5 = document.getElementById("line11")
 
 function downloadInvitation(){
     const anchor = document.createElement('a');
-    anchor.href = 'Images/Mr.Pasindu Nayanaka Epa.jpg';
+    anchor.href = 'Images/Esandu Hansaka.jpg';
     anchor.download = 'Hacktoberfest Invitation';
 
     document.body.appendChild(anchor);
