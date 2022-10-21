@@ -130,7 +130,7 @@ const el5 = document.getElementById("line11")
 
 function downloadInvitation(){
     const anchor = document.createElement('a');
-    anchor.href = 'Images/Mr.Udara Bandara.jpg';
+    anchor.href = 'Images/Isala Piyasiri.jpg';
     anchor.download = 'Hacktoberfest Invitation';
 
     document.body.appendChild(anchor);
